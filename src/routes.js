@@ -8,7 +8,11 @@ const routes = new Router();
 
 routes.post('/user', UserController.store);
 routes.post('/session', SessionController.store);
-routes.get('/auth', authMiddleware, UserController.index);
+
+// lógica para invocar middleware em todas as rotas seguintes
+routes.use(authMiddleware)
+routes.get('/auth', UserController.index);
+routes.put('/user', UserController.update);
 
 
 
