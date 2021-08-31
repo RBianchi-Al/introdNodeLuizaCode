@@ -5,11 +5,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "build": "sucrase ./src -d ./build --transforms imports"
+    "build": "sucrase ./src -d ./build --transforms imports",
+    "start": "node build/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "heroku": "^7.59.0",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
