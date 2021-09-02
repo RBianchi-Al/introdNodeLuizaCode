@@ -1,8 +1,4 @@
 import app from './';
-import cors from 'cors'
-
-// middleware
-app.use(cors())
 
 
 if(process.env.NODE_ENV === "production") {

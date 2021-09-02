@@ -2,6 +2,7 @@ import * as Yup from 'yup';
 import User from "../models/Users";
 
 class UserController {
+  
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
@@ -29,14 +30,19 @@ class UserController {
       })
     }
     const { id, name, email } = await User.create(req.body)
+
     return res.json({ id, name, email });
 
   };
   async index(req, res) {
-    const person = {
-      name: "Nome da Pessoa",
+     const person = [ {
+      name: "Marciel",
       age: 21
-    }
+    }, 
+    {
+      name: "Renata",
+      age: 21
+    }]
     return res.status(200).json(person);
   };
 
