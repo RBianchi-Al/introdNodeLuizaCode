@@ -11,3 +11,10 @@ armazenar informaçoes de imagens
 yarn add multer (configurar data e outros dados)
 
 para não gerar duplicidade, baixar crypto, tratar nomeclatura dos arquivos, ele é mais curto e idea lpara nomecatura
+
+yarn add mongoose => fazer a conexão com o mongoDB
+
+yDSWQmqCcQdCQDPU
+luizalabs
+
+DvZlesHrbUqE5boD
